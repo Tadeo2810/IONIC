@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">picker</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-picker-column value="javascript">
+    <ion-picker-column-option value="" disabled="true">--</ion-picker-column-option>
+    <ion-picker-column-option value="javascript">Javascript</ion-picker-column-option>
+    <ion-picker-column-option value="typescript">Typescript</ion-picker-column-option>
+    <ion-picker-column-option value="rust">Rust</ion-picker-column-option>
+    <ion-picker-column-option value="c#">C#</ion-picker-column-option>
+  </ion-picker-column>
+</ion-content>
