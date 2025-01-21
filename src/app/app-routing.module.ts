@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'breadcrumbs',
     loadChildren: () => import('./breadcrumbs/breadcrumbs.module').then( m => m.BreadcrumbsPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 
 @NgModule({

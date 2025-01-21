@@ -8,9 +8,9 @@ import { NavController, ToastController } from '@ionic/angular';
   standalone: false
 })
 export class LoginPage implements OnInit {
-
-  email:string = '';
-  password: string = '';
+  nombre: string ='Tadeo';
+  email:string = 'tadeocarrera@utcv.edu.mx';
+  password: string = 'dsm2025';
 
   constructor(
     private toastController: ToastController,
@@ -21,8 +21,9 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    if(this.email === 'Alex Tadeo @utcv.edu.mx'
-    && this.password === 'dsm2025'){
+    if(this.email === 'tadeocarrera@utcv.edu.mx'
+    && this.password === 'dsm2025'
+    && this.nombre === 'Tadeo'){
     this.navController.navigateRoot('/inicio');
   }
   else{
